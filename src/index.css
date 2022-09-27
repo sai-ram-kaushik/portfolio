@@ -11,3 +11,7 @@ body{
     background-color: #00091a;
     color: white;
 }
+
+.btn-primary{
+  @apply bg-cyan-600 font-semibold font-sans text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2
+}
