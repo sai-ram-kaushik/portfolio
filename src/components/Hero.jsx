@@ -27,7 +27,7 @@ const Hero = () => {
                     backSpeed={50}
                     loop />
               </div>
-              <a href='https://drive.google.com/file/d/1nlPs3M5xuo9SRTr_DlLOiN2iB853pCA9/view?usp=sharing' target={'_blank'}><button className='btn-primary mt-4'>Download Resume</button></a>
+              <a href='https://drive.google.com/file/d/1x1XTr52CcsFyAqKVas7ZfuORUg6t_ybR/view?usp=sharing' target={'_blank'}><button className='btn-primary mt-4'>Download Resume</button></a>
               <div className='mt-8 text-5xl flex items-center md:justify-start justify-center text-gray-600  cursor-pointer gap-8'>
                   <a href='https://github.com/sai-ram-kaushik' target={'_blank'}><AiFillGithub className='hover:text-white'/></a>
                   <a href='https://www.linkedin.com/in/sairam-kaushik-711a40210/'target={'_blank'}><span className='hover:text-white'><AiFillLinkedin /></span></a>
