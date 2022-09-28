@@ -1,26 +1,40 @@
 import React from 'react'
 import { AiFillHtml5 } from 'react-icons/ai'
-import {SiCss3} from 'react-icons/si'
-import {DiJavascript1} from 'react-icons/di'
+import {SiCss3, SiAdobephotoshop, SiTailwindcss} from 'react-icons/si'
+import {DiJavascript1, DiGit} from 'react-icons/di'
 import {FaReact} from 'react-icons/fa'
 import {FiFigma} from 'react-icons/fi'
+import {BsGithub} from 'react-icons/bs'
 const Skills = () => {
   const skills = [
     {
-      logo: <AiFillHtml5 />, level: 'Advance', count: 90 
+      logo: <AiFillHtml5 />, level: 'Advance', count: 90, title: 'HTML' 
     },
     {
-      logo: <SiCss3 />, level: 'Medium', count: 75 
+      logo: <SiCss3 />, level: 'Medium', count: 75, title: 'CSS' 
     },
     {
-      logo: <DiJavascript1 />, level: 'Medium', count: 65 
+      logo: <DiJavascript1 />, level: 'Medium', count: 65, title: 'JavaScript' 
     },
     {
-      logo: <FaReact />, level: 'Medium', count: 70
+      logo: <FaReact />, level: 'Medium', count: 70, title: 'React Js'
     },
     {
-      logo: <FiFigma />, level: 'Advance', count: 90 
+      logo: <FiFigma />, level: 'Advance', count: 90, title: 'Figma'
     },
+    {
+      logo: <SiAdobephotoshop />, level: 'Medium', count: 60, title: 'Photoshop'
+    },
+    {
+      logo: <DiGit />, level: 'Advance', count: 90, title: 'Git'
+    },
+    {
+      logo: <BsGithub />, level: 'Advance', count: 90, title: 'GitHub'
+    },
+    {
+      logo: <SiTailwindcss />, level: 'Medium', count: 75, title: 'Tailwind CSS'
+    },
+  
   ]
   return (
     <section id='skills' className='py-10 relative'>
@@ -39,6 +53,7 @@ const Skills = () => {
                 {skill.logo}
               </div>
             </div>
+            <p className='text-xl mt-2'>{skill.title}</p>
             <p className='text-xl mt-3 '>{skill.level}</p>
           </div>
             ))
