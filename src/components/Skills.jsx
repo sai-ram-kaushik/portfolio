@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillHtml5 } from 'react-icons/ai'
 import {SiCss3, SiAdobephotoshop, SiTailwindcss} from 'react-icons/si'
-import {DiJavascript1, DiGit} from 'react-icons/di'
+import {DiJavascript1, DiGit, DiLinux} from 'react-icons/di'
 import {FaReact} from 'react-icons/fa'
 import {FiFigma} from 'react-icons/fi'
 import {BsGithub} from 'react-icons/bs'
@@ -33,6 +33,9 @@ const Skills = () => {
     },
     {
       logo: <SiTailwindcss />, level: 'Medium', count: 75, title: 'Tailwind CSS'
+    },
+    {
+      logo: <DiLinux />, level: 'Medium', count: 75, title: 'Linux'
     },
   
   ]
