@@ -37,7 +37,7 @@ input,textarea{
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: cyan;
+  background-color: white;
   border-radius: 1rem;
   background-clip: content-box;
 }
