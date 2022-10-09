@@ -22,7 +22,7 @@ const Hero = () => {
                 strings={[
                     'Web Developer',
                     'Graphic Designer',
-                    'Ethical Hacker']}
+                    'Cyber Security Enthusiast']}
                     typeSpeed={40}
                     backSpeed={50}
                     loop />
