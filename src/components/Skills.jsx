@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AiFillHtml5 } from 'react-icons/ai'
 import {SiCss3, SiAdobephotoshop, SiTailwindcss} from 'react-icons/si'
 import {DiJavascript1, DiGit, DiLinux} from 'react-icons/di'
 import {FaReact} from 'react-icons/fa'
 import {FiFigma} from 'react-icons/fi'
 import {BsGithub} from 'react-icons/bs'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const Skills = () => {
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
   const skills = [
     {
       logo: <AiFillHtml5 />, level: 'Advance', count: 90, title: 'HTML' 
@@ -42,9 +49,9 @@ const Skills = () => {
   return (
     <section id='skills' className='py-10 relative'>
       <div className='mt-8 text-gray-100 text-center'>
-        <h3 className='text-4xl font-semibold'>My <span className='text-cyan-600'>Skills</span></h3>
-        <p className='text-gray-400 mt-3 text-lg'>My knowledge</p>
-        <div className='flex items-center justify-center mt-12 gap-10 flex-wrap'>
+        <h3 className='text-4xl font-semibold' data-aos="fade-right">My <span className='text-cyan-600'>Skills</span></h3>
+        <p className='text-gray-400 mt-3 text-lg' data-aos="fade-right">My knowledge</p>
+        <div className='flex items-center justify-center mt-12 gap-10 flex-wrap' data-aos="fade-right">
           {
             skills?.map((skill,i) =>(
               <div key={i} className='border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl'>

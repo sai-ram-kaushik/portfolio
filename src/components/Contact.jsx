@@ -1,8 +1,15 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const Contact = () => {
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
+
   return (
-    <section id='contact' className='py-19 px-3 text-white'>
+    <section id='contact' className='py-19 px-3 text-white' data-aos="fade-right">
         <div className='text-center mt-8'>
             <h3 className='text-4xl font-semibold'>Contact <span className='text-cyan-600'>Me</span></h3>
             <p className='text-gray-400 mt-3 text-lg'>Get in Touch</p>

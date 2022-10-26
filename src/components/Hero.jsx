@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import Typed from 'react-typed'
 import hero from '../assests/images/hero.png'
 import {AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiFillInstagram, AiFillYoutube} from 'react-icons/ai'
 const Hero = () => {
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
-    <section id='home' className='min-h-screen flex py-10 md:flex-row flex-col items-center'>
+    <section id='home' className='min-h-screen flex py-10 md:flex-row flex-col items-center' data-aos="fade-right">
         <div className='flex-1 flex item-center justify-center h-full'>
             <img src={hero} alt="image" className='md:w-8/12 h-full object-cover mt-24' />
         </div>
@@ -13,7 +20,7 @@ const Hero = () => {
               <h1 className='md:text-6xl text-2xl md:leading-normal leading-10 text-white font-bold'>
                 <span className='text-cyan-600 md:text-6xl text-5xl'>
                   Hello!
-                  <br />
+                  <br />  
                 </span>
                 My Name is <span className='text-orange-300'>Sairam Kaushik</span>
               </h1>

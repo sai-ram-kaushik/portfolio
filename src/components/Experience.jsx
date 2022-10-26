@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -8,14 +8,21 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const Experience = () => {
+
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <section id='experience' className='py-10 relative'>
       <div className='mt-8 text-gray-100 text-center'>
-        <h3 className='text-4xl font-semibold'>My <span className='text-cyan-600'>Experience</span></h3>
-        <p className='text-gray-400 mt-3 text-lg'>My awesome works</p>
-        <div className='flex items-center justify-center mt-12  flex-wrap'>
+        <h3 className='text-4xl font-semibold' data-aos="fade-right">My <span className='text-cyan-600'>Experience</span></h3>
+        <p className='text-gray-400 mt-3 text-lg' data-aos="fade-right">My awesome works</p>
+        <div className='flex items-center justify-center mt-12  flex-wrap' data-aos="fade-up">
           <Timeline position="alternate">
             <TimelineItem>
               <TimelineOppositeContent

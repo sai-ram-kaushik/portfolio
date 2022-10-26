@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const Projects = () => {
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <section id='projects' className='py-10 relative'>
       <div className='mt-8 text-gray-100 text-center'>
-        <h3 className='text-4xl font-semibold '>
+        <h3 className='text-4xl font-semibold ' data-aos="fade-right">
           My <span className='text-cyan-600'>Projects</span>
         </h3>
-        <p className='text-gray-400 mt-3 text-lg'>My awesome works</p>
+        <p className='text-gray-400 mt-3 text-lg' data-aos="fade-right">My awesome works</p>
         <div className=' flex justify-center mt-12'>
-          <div className='w-[30%] flex flex-wrap md:item-center justify-center'>
+          <div className='w-[30%] flex flex-wrap md:item-center justify-center' data-aos="fade-up">
             <ul>
               <li className='relative flex gap-6 pb-5 items-baseline'>
                 <div className='before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400'>
