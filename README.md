@@ -1,8 +1,8 @@
-##Personal Portfolio
+## Personal Portfolio
 
-###[Live Site](https://sairamkaushik.vercel.app/)
+### [Live Site](https://sairamkaushik.vercel.app/)
 
 ![Portfolio Website](public/screenshot.png)
 
-This is sample of my personal portfolio website.
+This is sample of my personal portfolio website.<br />
 It's build up using ReactJs and Tailwind CSS.
