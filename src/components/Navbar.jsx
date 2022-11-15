@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "bg-white text-gray-900" : "text-white"}`}>
             <div className='flex item-center justify-between'>
                 <div className='mx-7'>
-                    <h4 className='text-4xl uppercase font-bold font-sans m-3'>
+                    <h4 className='uppercase font-bold font-sans m-3 md:text-4xl text-2xl'>
                         Sairam<span className='text-orange-400 font-sans'> Kaushik</span>
                     </h4>
                 </div>
