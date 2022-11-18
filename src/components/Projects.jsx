@@ -25,13 +25,12 @@ const Projects = () => {
                   </svg>
                 </div>
                 <div className='text-lg text-gray-400'>
-                  <p className='text-3xl font-sans font-bold text-white'>DropCount - Reward based Water Efficiency Increaser</p>
-                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16 mt-2'/>Mobile App made using Flutter, Firebase and Dart.
+                  <p className='text-3xl font-sans font-bold text-white'>AICCIT - 2023</p>
+                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16 mt-2'/>A Website made with Reactjs and Tailwind CSS 
                 </p>
-                <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16 mt-2'/>A platform to monitor the water efficence usage in household.
+                <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16 mt-2'/>A Website for a college conference which will be integrated in our college official website
                 </p>
-                <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16 mt-2'/>Fetch the data from the hardware device and gives meaningful stats to user
-                </p>
+                <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16 mt-2'/>Check out the website -<span className='text-blue-500'><a href="https://aiccit2023.vercel.app/" target="_blank">Link</a></span></p>
                 </div>
               </li>
 
@@ -42,9 +41,10 @@ const Projects = () => {
                   </svg>
                 </div>
                 <div className='text-lg text-gray-400'>
-                  <p className='text-3xl font-sans font-bold text-white'>Covid - 19</p>
-                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16'/>A website made with HTML, CSS, JavaScript and PHP</p>
-                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16'/>A platform where we can check the covid-19 active cases in India</p>
+                  <p className='text-3xl font-sans font-bold text-white'>Weather Application</p>
+                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16'/>A website made with Reactjs, Tailwind CSS and Weather API</p>
+                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16'/>A platform where we can check the weather status of any country</p>
+                  <p className='mt-2 flex items-baseline'><AiOutlineArrowRight className='w-16'/>Check out the website - <span className='text-blue-500'><a href='https://weather-pi-khaki.vercel.app/'target="_blank">Link</a></span></p>
                 </div>
               </li>
             </ul>
