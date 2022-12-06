@@ -1,89 +1,63 @@
-import React, { useEffect } from 'react'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import React, { useEffect } from "react";
+import { MdDeveloperMode, MdOutlineDesignServices } from "react-icons/md";
 import Aos from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 const Experience = () => {
-
-
-  useEffect(() =>{
-    Aos.init({duration: 1000});
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
-    <section id='experience' className='py-10 relative'>
-      <div className='mt-8 text-gray-100 text-center'>
-        <h3 className='text-4xl font-semibold' data-aos="fade-right">My <span className='text-cyan-600'>Experience</span></h3>
-        <p className='text-gray-400 mt-3 text-lg' data-aos="fade-right">My awesome works</p>
-        <div className='flex items-center justify-center mt-12  flex-wrap' data-aos="fade-up">
-          <Timeline position="alternate">
-            <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                align="right"
-                variant="body5"
-                color="white"
-              >
-                August, 2022 - Present
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot>
-                  <LocationOnIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
-                <Typography variant="h5" component="span" color="cyan">
-                  Frontend Developer Intern @Manav Rachna
-                </Typography>
-                <Typography>
-                  Worked on an elderly matrimonial site project tech stack used was Reactjs, Tailwind CSS, node js, express and mongoDB.
-                  My task was to create proper authentication page setup on web2 to provide a hassle free experience to users for login,sign up etc and the landing page.
-                  It also involved setting up jot[JWT] for secure transmission of information.
-                </Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                variant="body2"
-                color="white"
-              >
-                April, 2022 - September, 2022
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary">
-                  <LocationOnIcon />
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
-                <Typography variant="h5" component="span" color="cyan">
-                  Graphic Design Intern @Sudan's Tech
-                </Typography>
-                <Typography>
-                  I was in charge of making the UI for the web pages and different website components.<br />
-                  In addition, I was responsible for creating social media posts, batches, posters, and brochures.
-                </Typography>
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator />
-            </TimelineItem>
-          </Timeline>
+    <section id="experience" className="py-10 relative">
+      <div className="mt-8 text-gray-100 text-center">
+        <h3 className="text-4xl font-semibold" data-aos="fade-right">
+          My <span className="text-cyan-600">Experience</span>
+        </h3>
+        <p className="text-gray-400 mt-3 text-lg" data-aos="fade-right">
+          My awesome works
+        </p>
+        <div
+          className="flex items-center justify-center mt-12  flex-row flex-wrap gap-10 "
+          data-aos="fade-up"
+        >
+          <div className="border-2 border-cyan-600 rounded-xl p-4 text-xl w-[35rem] font-poppins flex gap-5 justify-center bg-gray-900">
+            <div className="flex justify-start items-center">
+              <MdDeveloperMode className="text-6xl" />
+            </div>
+            <div className="flex flex-col font-bold leading-6">
+              <h2 className="text-3xl">Frontend Developer Intern</h2>
+              <p className="text-[12px] flex">
+                Manav Rachna International Institute of Research and Studies
+              </p>
+              <p className="flex text-[12px]">June, 22 - October, 22</p>
+            </div>
+          </div>
+
+          <div className="border-2 border-cyan-600 rounded-xl p-4 text-xl w-[35rem] font-poppins flex gap-5 justify-center bg-gray-900">
+            <div className="flex justify-start items-center">
+              <MdOutlineDesignServices className="text-6xl" />
+            </div>
+            <div className="flex flex-col font-bold leading-6">
+              <h2 className="text-3xl">Graphic Design Lead</h2>
+              <p className="text-[12px] flex">Sudan's Technocrat Foundation</p>
+              <p className="text-[12px] flex">April, 22 - October, 22</p>
+            </div>
+          </div>
+
+          <div className="border-2 border-cyan-600 rounded-xl p-4 text-xl w-[35rem] font-poppins flex gap-5 justify-center bg-gray-900">
+            <div className="flex justify-start items-center">
+              <MdOutlineDesignServices className="text-6xl" />
+            </div>
+            <div className="flex flex-col font-bold leading-6">
+              <h2 className="text-3xl">Graphic Design Lead</h2>
+              <p className="text-[12px] flex">Google Developer Student Clubs, MRIIRS</p>
+              <p className="text-[12px] flex">August, 22 - Present</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
