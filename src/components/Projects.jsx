@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import project1 from "../assests/images/aiccit.png";
 import project2 from "../assests/images/weather.png";
+import project3 from '../assests/images/dropcount.png'
 const Projects = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -53,6 +54,26 @@ const Projects = () => {
                   Website Link -{" "}
                   <a
                     href="https://weather-pi-khaki.vercel.app/"
+                    target="_blank"
+                    className="text-blue-500"
+                  >
+                    Link
+                  </a>
+                </h2>
+              </div>
+            </div>
+
+            <div className="border-2 border-cyan-600 rounded-xl p-4 text-xl w-[35rem] font-poppins flex flex-col gap-5 justify-center bg-gray-900">
+              <div className="flex justify-center items-center">
+                <img src={project3} className="rounded-lg" />
+              </div>
+
+              <div className="flex flex-col font-bold leading-6 gap-3">
+                <h2 className="text-3xl">Drop Count</h2>
+                <h2 className="text-xl">
+                  GitHub Link -{" "}
+                  <a
+                    href="https://github.com/sai-ram-kaushik/DropCount"
                     target="_blank"
                     className="text-blue-500"
                   >
